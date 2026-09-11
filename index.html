@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>海丰日历</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: #F7F2EE; color: #4A4540;
+    font-family: "Microsoft YaHei", "微软雅黑", sans-serif;
+  }
+  .wrap { width: 100%; margin: 0 auto; padding: 10px 24px 18px; box-sizing: border-box; }
+  .topbar {
+    display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+    background: #EDE6DC; border: 1px solid #D8CEBE; border-radius: 8px;
+    padding: 10px 16px; margin-bottom: 10px;
+  }
+  .title { font-size: 18px; font-weight: bold; }
+  .navbtn {
+    border: 1px solid #C9BCA6; background: #FBF8F3; color: #5A4A30;
+    border-radius: 6px; padding: 4px 12px; cursor: pointer; font-size: 14px;
+  }
+  .navbtn:hover { background: #F1E9DC; }
+  .linkbtn { background: #E8C0C0; color: #5A4A30; border-color: #C9A0A0; font-weight: bold; }
+  .linkbtn:hover { background: #D8B0B0; color: #5A4A30; }
+  .monthlabel { font-size: 16px; font-weight: bold; min-width: 110px; text-align: center; }
+  .spacer { flex: 1; }
+  .stats { font-size: 13px; color: #7A6A50; }
+  .legend { display: flex; gap: 14px; flex-wrap: wrap; margin: 6px 2px 12px; font-size: 12px; }
+  .legend .item { display: flex; align-items: center; gap: 5px; }
+  .legend .sw { width: 16px; height: 14px; border: 1px solid #B9AE98; border-radius: 3px; }
+  .grid { display: grid; grid-template-columns: 1fr 0.125fr 1fr 0.125fr 1fr 1fr 1fr; gap: 6px; align-items: start; }
+  .wkhead {
+    background: #D5D5E0; color: #4A4540; text-align: center; font-weight: bold;
+    font-size: 13px; padding: 8px 0; border-radius: 4px;
+  }
+  .cell {
+    background: #EDEAE4; border: 1px solid #D9D3C7; border-radius: 5px;
+    min-height: 108px; padding: 5px; display: flex; flex-direction: column; gap: 4px;
+  }
+  .cell.empty-cell { min-height: 34px; }
+  .cell.narrow { background: #E9E3DB; }
+  .cell.narrow .cellhdr { color: #8A7A60; font-weight: normal; white-space: nowrap; }
+  .cell.narrow .ship { font-size: 10px; line-height: 1.2; padding: 2px 4px; }
+  .cell.out { background: #E4E0D8; opacity: .82; }
+  .cellhdr { font-size: 12px; font-weight: bold; color: #4A4540; padding: 1px 2px; }
+  .ship {
+    width: 100%; text-align: left; border: 1px solid #C9BCA6; border-radius: 4px;
+    padding: 4px 6px; font-size: 11.5px; line-height: 1.35; cursor: pointer;
+    font-family: "Microsoft YaHei", "微软雅黑", sans-serif; overflow: hidden;
+  }
+  .ship:hover { filter: brightness(0.96); }
+  .ship.cancelled { font-style: italic; }
+  .empty { flex: 1; }
+  .detail {
+    position: fixed; inset: 0; background: rgba(0,0,0,.35); display: none;
+    align-items: center; justify-content: center; z-index: 50;
+  }
+  .detail.show { display: flex; }
+  .card {
+    background: #FFFDF9; border: 1px solid #C9BCA6; border-radius: 10px;
+    padding: 18px 22px; min-width: 280px; max-width: 420px; box-shadow: 0 8px 30px rgba(0,0,0,.2);
+  }
+  .card h3 { margin: 0 0 10px; font-size: 16px; }
+  .card .row { display: flex; gap: 8px; padding: 4px 0; border-bottom: 1px dashed #E4DDCF; font-size: 13px; }
+  .card .row .k { width: 70px; color: #8A7A60; }
+  .card .close { margin-top: 14px; text-align: right; }
+  .badge { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 12px; }
+  .badge.cancel { background: #E2E2E2; color: #9A9A9A; }
+  .badge.guess { background: #FBE9C8; color: #9A6A1A; }
+  #err { color: #B03030; font-size: 13px; margin: 8px 2px; display: none; }
+  .gentime { font-size: 11px; color: #A89880; margin-left: 8px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <span class="title">海丰日历</span>
+    <button class="navbtn" id="prev">‹</button>
+    <span class="monthlabel" id="mlabel">—</span>
+    <button class="navbtn" id="next">›</button>
+    <button class="navbtn" id="today">今天</button>
+    <button class="navbtn linkbtn" onclick="window.open('https://ebusiness.sitcline.com/#/topMenu/vesselMovementSearch','_blank')">海丰船期查询</button>
+    <button class="navbtn linkbtn" onclick="window.open('https://ebusiness.sitcline.com/#/topMenu/equipmentFee','_blank')">海丰FT查询</button>
+    <button class="navbtn" onclick="location.href='tencent://message/?uin=1877251341'">联系QQ</button>
+    <span class="spacer"></span>
+    <span class="stats" id="stats"></span>
+    <span class="gentime" id="gentime"></span>
+  </div>
+  <div class="legend">
+    <div class="item"><span class="sw" style="background:#E8C0C0"></span>停止订舱</div>
+    <div class="item"><span class="sw" style="background:#D5D5E0"></span>亏舱费已统计</div>
+    <div class="item"><span class="sw" style="background:#CFCFCF"></span>SKIP取消</div>
+    <div class="item"><span class="sw" style="background:#E8E0D0"></span>正常订舱</div>
+  </div>
+  <div id="err"></div>
+  <div class="grid" id="grid"></div>
+</div>
+
+<div class="detail" id="detail">
+  <div class="card">
+    <h3 id="d_title">船期详情</h3>
+    <div id="d_body"></div>
+    <div class="close"><button class="navbtn" onclick="closeDetail()">关闭</button></div>
+  </div>
+</div>
+
+<script>
+const WK = ["日","一","二","三","四","五","六"];
+let curY = new Date().getFullYear();
+let curM = new Date().getMonth() + 1;
+let SNAPSHOT = null;  // 整个 data.json
+
+const $ = id => document.getElementById(id);
+
+function renderShell() {
+  const grid = $("grid");
+  grid.innerHTML = "";
+  for (const w of WK) {
+    const h = document.createElement("div");
+    h.className = "wkhead"; h.textContent = w;
+    grid.appendChild(h);
+  }
+}
+
+function keyOf(y, m) { return `${y}-${String(m).padStart(2, "0")}`; }
+
+async function load() {
+  const err = $("err");
+  err.style.display = "none";
+  if (!SNAPSHOT) {
+    try {
+      const r = await fetch("./data.json", { cache: "no-store" });
+      if (!r.ok) throw new Error("HTTP " + r.status);
+      SNAPSHOT = await r.json();
+    } catch (e) {
+      err.textContent = "加载失败：" + e.message + "（data.json 不存在或未生成）";
+      err.style.display = "block";
+      return;
+    }
+  }
+  const key = keyOf(curY, curM);
+  const data = SNAPSHOT.months && SNAPSHOT.months[key];
+  if (!data) {
+    err.textContent = `暂无 ${curY}年${curM}月 数据（站点未生成该月快照）`;
+    err.style.display = "block";
+    $("grid").innerHTML = "";
+    return;
+  }
+  if (data.error) {
+    err.textContent = `${curY}年${curM}月 解析错误：${data.error}`;
+    err.style.display = "block";
+    $("grid").innerHTML = "";
+    return;
+  }
+  render(data);
+}
+
+function render(data) {
+  curY = data.year; curM = data.month;
+  $("mlabel").textContent = `${curY}年${curM}月`;
+  const s = data.stats;
+  $("stats").textContent =
+    `船期 ${s.active_rows} 行（含取消 ${s.cancel_n} 行）｜ 停止订舱 ${s.stop_n} ｜ 亏舱费统计 ${s.def_n}`;
+  if (SNAPSHOT && SNAPSHOT.generated) {
+    $("gentime").textContent = "数据更新于 " + SNAPSHOT.generated + "（北京时间）";
+  }
+
+  const grid = $("grid");
+  while (grid.children.length > 7) grid.removeChild(grid.lastChild);
+
+  for (const week of data.weeks) {
+    for (let ci = 0; ci < week.length; ci++) {
+      const cell = week[ci];
+      const isNarrow = (ci === 1 || ci === 3);   // 周一、周三 整列窄
+      const div = document.createElement("div");
+      const isEmpty = cell.ships.length === 0;
+      div.className = "cell" + (cell.in_month ? "" : " out") + (isEmpty ? " empty-cell" : "") + (isNarrow ? " narrow" : "");
+      const hdr = document.createElement("div");
+      hdr.className = "cellhdr";
+      hdr.textContent = `${cell.month}/${cell.day}`;
+      div.appendChild(hdr);
+      if (isEmpty) {
+        const e = document.createElement("div");
+        e.className = "empty";
+        div.appendChild(e);
+      } else {
+        for (const sh of cell.ships) {
+          const b = document.createElement("button");
+          b.className = "ship" + (sh.cancelled ? " cancelled" : "");
+          b.style.background = sh.bg;
+          b.style.color = sh.fg;
+          b.style.borderColor = sh.ab;
+          b.textContent = sh.text;
+          b.onclick = () => showDetail(sh, cell);
+          div.appendChild(b);
+        }
+      }
+      grid.appendChild(div);
+    }
+  }
+}
+
+function showDetail(sh, cell) {
+  $("d_title").textContent = sh.cancelled ? "船期（已取消/SKIP）" : "船期详情";
+  let html = "";
+  html += row("航线", sh.route || "—");
+  html += row("船名", sh.ship || "—");
+  html += row("航次", sh.voyage || "—");
+  html += row("目的港", (sh.ports || []).join(" / ") || "—");
+  html += row("ETD", sh.etd || "—");
+  if (sh.cancelled) html += `<div class="row"><span class="k">状态</span><span><span class="badge cancel">取消 / SKIP</span></span></div>`;
+  if (sh.etd_guessed) html += `<div class="row"><span class="k">提示</span><span><span class="badge guess">日期为推算</span></span></div>`;
+  $("d_body").innerHTML = html;
+  $("detail").classList.add("show");
+}
+function row(k, v) { return `<div class="row"><span class="k">${k}</span><span>${v}</span></div>`; }
+function closeDetail() { $("detail").classList.remove("show"); }
+$("detail").addEventListener("click", e => { if (e.target.id === "detail") closeDetail(); });
+
+$("prev").onclick = () => { curM--; if (curM < 1) { curM = 12; curY--; } load(); };
+$("next").onclick = () => { curM++; if (curM > 12) { curM = 1; curY++; } load(); };
+$("today").onclick = () => { const t = new Date(); curY = t.getFullYear(); curM = t.getMonth() + 1; load(); };
+
+renderShell();
+load();
+</script>
+</body>
+</html>
