@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-09 13:33",
- "generated_iso": "2026-09-09T13:33:59",
+ "generated": "2026-09-11 16:57",
+ "generated_iso": "2026-09-11T16:57:04",
  "months": {
   "2026-08": {
    "year": 2026,
@@ -2323,9 +2323,9 @@
        },
        {
         "text": "SITC SHUNDE 2619N·大阪/神户 VTX1",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "VTX1",
         "ship": "SITC SHUNDE",
@@ -2517,9 +2517,9 @@
       "ships": [
        {
         "text": "SITC HONGKONG 2627N·博多/名古屋/四日市 CJV2",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "CJV2",
         "ship": "SITC HONGKONG",
@@ -2558,9 +2558,9 @@
       "ships": [
        {
         "text": "SIRI BHUM 2638E·名古屋 SKT5",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "SKT5",
         "ship": "SIRI BHUM",
@@ -2613,9 +2613,9 @@
       "ships": [
        {
         "text": "KOTA NAZAR 2635N·大阪/神户 CVS2",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "CVS2",
         "ship": "KOTA NAZAR",
@@ -2883,9 +2883,9 @@
       "ships": [
        {
         "text": "SITC YIHE 2633N·东京/川崎/横滨/清水 CJV3",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "CJV3",
         "ship": "SITC YIHE",
@@ -3530,8 +3530,8 @@
     ]
    ],
    "stats": {
-    "stop_n": 21,
-    "def_n": 21,
+    "stop_n": 26,
+    "def_n": 25,
     "active_rows": 178,
     "cancel_n": 36,
     "months": [
