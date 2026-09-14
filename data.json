@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-11 17:04",
- "generated_iso": "2026-09-11T17:04:26",
+ "generated": "2026-09-14 13:29",
+ "generated_iso": "2026-09-14T13:29:03",
  "months": {
   "2026-08": {
    "year": 2026,
@@ -1662,9 +1662,9 @@
        },
        {
         "text": "SITC QINZHOU 2634E·博多/门司 PSU",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "PSU",
         "ship": "SITC QINZHOU",
@@ -1981,9 +1981,9 @@
        },
        {
         "text": "SITC QINZHOU 2634E·博多/门司 PSU",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "PSU",
         "ship": "SITC QINZHOU",
@@ -2454,9 +2454,9 @@
       "ships": [
        {
         "text": "RENOWN 2631N·名古屋 PST2",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "bg": "#D5D5E0",
+        "fg": "#4A4540",
+        "ab": "#C5C5D8",
         "cancelled": false,
         "route": "PST2",
         "ship": "RENOWN",
@@ -2534,9 +2534,9 @@
        },
        {
         "text": "ESTIMA 2636E·横滨/东京 SKT4",
-        "bg": "#D5D5E0",
-        "fg": "#4A4540",
-        "ab": "#C5C5D8",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "SKT4",
         "ship": "ESTIMA",
@@ -2589,9 +2589,9 @@
        },
        {
         "text": "SITC ZHEJIANG 2623N·大阪/神户 VTX1",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "bg": "#D5D5E0",
+        "fg": "#4A4540",
+        "ab": "#C5C5D8",
         "cancelled": false,
         "route": "VTX1",
         "ship": "SITC ZHEJIANG",
@@ -2690,9 +2690,9 @@
        },
        {
         "text": "SITC NINGBO 2647E·大阪/神户/德山 S7",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "S7",
         "ship": "SITC NINGBO",
@@ -3530,8 +3530,8 @@
     ]
    ],
    "stats": {
-    "stop_n": 26,
-    "def_n": 25,
+    "stop_n": 29,
+    "def_n": 31,
     "active_rows": 178,
     "cancel_n": 36,
     "months": [
