@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-14 13:29",
- "generated_iso": "2026-09-14T13:29:03",
+ "generated": "2026-09-15 09:10",
+ "generated_iso": "2026-09-15T09:10:54",
  "months": {
   "2026-08": {
    "year": 2026,
@@ -2644,7 +2644,7 @@
         "etd_guessed": false
        },
        {
-        "text": "SITC SHIMIZU 2626E·名古屋/常陆那柯/仙台 SKT6",
+        "text": "SITC SHIMIZU 2626E·常陆那柯/仙台 SKT6",
         "bg": "#E8C0C0",
         "fg": "#9A4040",
         "ab": "#D8A8A8",
@@ -2653,7 +2653,6 @@
         "ship": "SITC SHIMIZU",
         "voyage": "2626E",
         "ports": [
-         "名古屋",
          "常陆那柯",
          "仙台"
         ],
@@ -2738,9 +2737,9 @@
       "ships": [
        {
         "text": "JJ SUN 2636N·大阪/神户 S2",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "S2",
         "ship": "JJ SUN",
@@ -2753,13 +2752,13 @@
         "etd_guessed": false
        },
        {
-        "text": "SUNRISE DRAGON 2621N·名古屋/东京/横滨 VTX2",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "text": "SITC SHUNDE 2621N·名古屋/东京/横滨 VTX2",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "VTX2",
-        "ship": "SUNRISE DRAGON",
+        "ship": "SITC SHUNDE",
         "voyage": "2621N",
         "ports": [
          "名古屋",
@@ -3361,14 +3360,14 @@
         "etd_guessed": false
        },
        {
-        "text": "SITC XINGDE 2621N·名古屋/东京/横滨 VTX2",
+        "text": "SUNRISE DRAGON 2623N·名古屋/东京/横滨 VTX2",
         "bg": "#E8E0D0",
         "fg": "#5A4A30",
         "ab": "#DACFC0",
         "cancelled": false,
         "route": "VTX2",
-        "ship": "SITC XINGDE",
-        "voyage": "2621N",
+        "ship": "SUNRISE DRAGON",
+        "voyage": "2623N",
         "ports": [
          "名古屋",
          "东京",
@@ -3435,13 +3434,13 @@
         "etd_guessed": false
        },
        {
-        "text": "SITC SHUNDE 2621N·大阪/神户 VTX1",
+        "text": "SITC XINGDE 2621N·大阪/神户 VTX1",
         "bg": "#E8E0D0",
         "fg": "#5A4A30",
         "ab": "#DACFC0",
         "cancelled": false,
         "route": "VTX1",
-        "ship": "SITC SHUNDE",
+        "ship": "SITC XINGDE",
         "voyage": "2621N",
         "ports": [
          "大阪",
@@ -3530,7 +3529,7 @@
     ]
    ],
    "stats": {
-    "stop_n": 29,
+    "stop_n": 31,
     "def_n": 31,
     "active_rows": 178,
     "cancel_n": 36,
@@ -3956,14 +3955,14 @@
         "etd_guessed": false
        },
        {
-        "text": "SITC XINGDE 2621N·名古屋/东京/横滨 VTX2",
+        "text": "SUNRISE DRAGON 2623N·名古屋/东京/横滨 VTX2",
         "bg": "#E8E0D0",
         "fg": "#5A4A30",
         "ab": "#DACFC0",
         "cancelled": false,
         "route": "VTX2",
-        "ship": "SITC XINGDE",
-        "voyage": "2621N",
+        "ship": "SUNRISE DRAGON",
+        "voyage": "2623N",
         "ports": [
          "名古屋",
          "东京",
@@ -4030,13 +4029,13 @@
         "etd_guessed": false
        },
        {
-        "text": "SITC SHUNDE 2621N·大阪/神户 VTX1",
+        "text": "SITC XINGDE 2621N·大阪/神户 VTX1",
         "bg": "#E8E0D0",
         "fg": "#5A4A30",
         "ab": "#DACFC0",
         "cancelled": false,
         "route": "VTX1",
-        "ship": "SITC SHUNDE",
+        "ship": "SITC XINGDE",
         "voyage": "2621N",
         "ports": [
          "大阪",
