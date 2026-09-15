@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-15 09:23",
- "generated_iso": "2026-09-15T09:23:36",
+ "generated": "2026-09-15 16:47",
+ "generated_iso": "2026-09-15T16:47:19",
  "months": {
   "2026-08": {
    "year": 2026,
@@ -2365,9 +2365,9 @@
        },
        {
         "text": "SINOTRANS OSAKA 2637E·博多/门司 PSU",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "bg": "#D5D5E0",
+        "fg": "#4A4540",
+        "ab": "#C5C5D8",
         "cancelled": false,
         "route": "PSU",
         "ship": "SINOTRANS OSAKA",
@@ -2589,9 +2589,9 @@
        },
        {
         "text": "SITC ZHEJIANG 2623N·大阪/神户 VTX1",
-        "bg": "#D5D5E0",
-        "fg": "#4A4540",
-        "ab": "#C5C5D8",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "VTX1",
         "ship": "SITC ZHEJIANG",
@@ -2785,9 +2785,9 @@
       "ships": [
        {
         "text": "SITC YOKKAICHI 2625N·大阪/神户/名古屋/四日市 CJV2",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "bg": "#D5D5E0",
+        "fg": "#4A4540",
+        "ab": "#C5C5D8",
         "cancelled": false,
         "route": "CJV2",
         "ship": "SITC YOKKAICHI",
@@ -3529,8 +3529,8 @@
     ]
    ],
    "stats": {
-    "stop_n": 31,
-    "def_n": 31,
+    "stop_n": 32,
+    "def_n": 33,
     "active_rows": 178,
     "cancel_n": 36,
     "months": [
