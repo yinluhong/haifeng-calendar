@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-15 16:47",
- "generated_iso": "2026-09-15T16:47:19",
+ "generated": "2026-09-16 09:56",
+ "generated_iso": "2026-09-16T09:56:34",
  "months": {
   "2026-08": {
    "year": 2026,
@@ -2629,9 +2629,9 @@
        },
        {
         "text": "SITC QINZHOU 2637E·博多/门司 PSU",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "PSU",
         "ship": "SITC QINZHOU",
@@ -2858,9 +2858,9 @@
        },
        {
         "text": "SITC MINGDE 2619N·大阪/神户 VTX1",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "VTX1",
         "ship": "SITC MINGDE",
@@ -2931,14 +2931,14 @@
         "etd_guessed": false
        },
        {
-        "text": "UNION TIANJIN 2643E·名古屋/常陆那柯/仙台 SKT6",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "text": "HF WEALTH 2628E·名古屋/常陆那柯/仙台 SKT6",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "SKT6",
-        "ship": "UNION TIANJIN",
-        "voyage": "2643E",
+        "ship": "HF WEALTH",
+        "voyage": "2628E",
         "ports": [
          "名古屋",
          "常陆那柯",
@@ -2994,9 +2994,9 @@
        },
        {
         "text": "MILD TUNE 2636N·东京/横滨 STK7",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "STK7",
         "ship": "MILD TUNE",
@@ -3057,9 +3057,9 @@
        },
        {
         "text": "SITC BRAVE 2623N·名古屋/东京/横滨 VTX2",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "VTX2",
         "ship": "SITC BRAVE",
@@ -3508,14 +3508,14 @@
         "etd_guessed": false
        },
        {
-        "text": "UNION TIANJIN 2645E·名古屋/常陆那柯/仙台 SKT6",
+        "text": "HF WEALTH 2630E·名古屋/常陆那柯/仙台 SKT6",
         "bg": "#E8E0D0",
         "fg": "#5A4A30",
         "ab": "#DACFC0",
         "cancelled": false,
         "route": "SKT6",
-        "ship": "UNION TIANJIN",
-        "voyage": "2645E",
+        "ship": "HF WEALTH",
+        "voyage": "2630E",
         "ports": [
          "名古屋",
          "常陆那柯",
@@ -3529,7 +3529,7 @@
     ]
    ],
    "stats": {
-    "stop_n": 32,
+    "stop_n": 37,
     "def_n": 33,
     "active_rows": 178,
     "cancel_n": 36,
@@ -3589,9 +3589,9 @@
        },
        {
         "text": "MILD TUNE 2636N·东京/横滨 STK7",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "STK7",
         "ship": "MILD TUNE",
@@ -3652,9 +3652,9 @@
        },
        {
         "text": "SITC BRAVE 2623N·名古屋/东京/横滨 VTX2",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "VTX2",
         "ship": "SITC BRAVE",
@@ -4103,14 +4103,14 @@
         "etd_guessed": false
        },
        {
-        "text": "UNION TIANJIN 2645E·名古屋/常陆那柯/仙台 SKT6",
+        "text": "HF WEALTH 2630E·名古屋/常陆那柯/仙台 SKT6",
         "bg": "#E8E0D0",
         "fg": "#5A4A30",
         "ab": "#DACFC0",
         "cancelled": false,
         "route": "SKT6",
-        "ship": "UNION TIANJIN",
-        "voyage": "2645E",
+        "ship": "HF WEALTH",
+        "voyage": "2630E",
         "ports": [
          "名古屋",
          "常陆那柯",
@@ -4162,14 +4162,14 @@
       "in_month": true,
       "ships": [
        {
-        "text": "SITC TONGHE 2623N·博多/门司 CJV7",
+        "text": "UNION TIANJIN 2645N·博多/门司 CJV7",
         "bg": "#E8E0D0",
         "fg": "#5A4A30",
         "ab": "#DACFC0",
         "cancelled": false,
         "route": "CJV7",
-        "ship": "SITC TONGHE",
-        "voyage": "2623N",
+        "ship": "UNION TIANJIN",
+        "voyage": "2645N",
         "ports": [
          "博多",
          "门司"
