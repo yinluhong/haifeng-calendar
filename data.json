@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-16 09:59",
- "generated_iso": "2026-09-16T09:59:48",
+ "generated": "2026-09-16 18:00",
+ "generated_iso": "2026-09-16T18:00:52",
  "months": {
   "2026-08": {
    "year": 2026,
@@ -1811,8 +1811,8 @@
    "stats": {
     "stop_n": 42,
     "def_n": 40,
-    "active_rows": 178,
-    "cancel_n": 36,
+    "active_rows": 172,
+    "cancel_n": 41,
     "months": [
      "2026-07",
      "2026-08",
@@ -2573,9 +2573,9 @@
        },
        {
         "text": "GLORY ZHENDONG 2638E·横滨/东京 T5",
-        "bg": "#D5D5E0",
-        "fg": "#4A4540",
-        "ab": "#C5C5D8",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "T5",
         "ship": "GLORY ZHENDONG",
@@ -2688,7 +2688,7 @@
         "etd_guessed": false
        },
        {
-        "text": "SITC NINGBO 2647E·大阪/神户/德山 S7",
+        "text": "SITC NINGBO 2647E·大阪/神户 S7",
         "bg": "#E8C0C0",
         "fg": "#9A4040",
         "ab": "#D8A8A8",
@@ -2698,8 +2698,7 @@
         "voyage": "2647E",
         "ports": [
          "大阪",
-         "神户",
-         "德山"
+         "神户"
         ],
         "etd": "9/20",
         "etd_guessed": false
@@ -2827,9 +2826,9 @@
       "ships": [
        {
         "text": "SIRI BHUM 2639E·名古屋 SKT5",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "SKT5",
         "ship": "SIRI BHUM",
@@ -2931,14 +2930,14 @@
         "etd_guessed": false
        },
        {
-        "text": "HF WEALTH 2628E·名古屋/常陆那柯/仙台 SKT6",
+        "text": "UNION TIANJIN 2643E·名古屋/常陆那柯/仙台 SKT6",
         "bg": "#E8C0C0",
         "fg": "#9A4040",
         "ab": "#D8A8A8",
         "cancelled": false,
         "route": "SKT6",
-        "ship": "HF WEALTH",
-        "voyage": "2628E",
+        "ship": "UNION TIANJIN",
+        "voyage": "2643E",
         "ports": [
          "名古屋",
          "常陆那柯",
@@ -2976,14 +2975,14 @@
         "etd_guessed": false
        },
        {
-        "text": "SITC NINGBO 2649E·大阪/神户/德山 S7",
+        "text": "SITC RENHE 2625N·大阪/神户/德山 S7",
         "bg": "#E8E0D0",
         "fg": "#5A4A30",
         "ab": "#DACFC0",
         "cancelled": false,
         "route": "S7",
-        "ship": "SITC NINGBO",
-        "voyage": "2649E",
+        "ship": "SITC RENHE",
+        "voyage": "2625N",
         "ports": [
          "大阪",
          "神户",
@@ -3024,11 +3023,11 @@
       "in_month": true,
       "ships": [
        {
-        "text": "SITC RENHE 2625N·博多/门司 CJV7",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
-        "cancelled": false,
+        "text": "SITC RENHE 取消·博多/门司 CJV7",
+        "bg": "#CFCFCF",
+        "fg": "#A6A6A6",
+        "ab": "#D2D2D2",
+        "cancelled": true,
         "route": "CJV7",
         "ship": "SITC RENHE",
         "voyage": "2625N",
@@ -3219,11 +3218,11 @@
         "etd_guessed": false
        },
        {
-        "text": "SITC QINZHOU 2639E·博多/门司 PSU",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
-        "cancelled": false,
+        "text": "SITC QINZHOU 取消·博多/门司 PSU",
+        "bg": "#CFCFCF",
+        "fg": "#A6A6A6",
+        "ab": "#D2D2D2",
+        "cancelled": true,
         "route": "PSU",
         "ship": "SITC QINZHOU",
         "voyage": "2639E",
@@ -3328,11 +3327,11 @@
       "in_month": false,
       "ships": [
        {
-        "text": "YOUCAN 2629N·博多/门司 CJV7",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
-        "cancelled": false,
+        "text": "YOUCAN 取消·博多/门司 CJV7",
+        "bg": "#CFCFCF",
+        "fg": "#A6A6A6",
+        "ab": "#D2D2D2",
+        "cancelled": true,
         "route": "CJV7",
         "ship": "YOUCAN",
         "voyage": "2629N",
@@ -3390,26 +3389,7 @@
       "month": 10,
       "year": 2026,
       "in_month": false,
-      "ships": [
-       {
-        "text": "SITC HONGKONG 2629N·大阪/神户/名古屋/四日市 CJV2",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
-        "cancelled": false,
-        "route": "CJV2",
-        "ship": "SITC HONGKONG",
-        "voyage": "2629N",
-        "ports": [
-         "大阪",
-         "神户",
-         "名古屋",
-         "四日市"
-        ],
-        "etd": "10/8",
-        "etd_guessed": false
-       }
-      ]
+      "ships": []
      },
      {
       "day": 9,
@@ -3458,11 +3438,11 @@
       "in_month": false,
       "ships": [
        {
-        "text": "HF FORTUNE 2631N·东京/川崎/横滨/清水 CJV3",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
-        "cancelled": false,
+        "text": "HF FORTUNE 取消·东京/川崎/横滨/清水 CJV3",
+        "bg": "#CFCFCF",
+        "fg": "#A6A6A6",
+        "ab": "#D2D2D2",
+        "cancelled": true,
         "route": "CJV3",
         "ship": "HF FORTUNE",
         "voyage": "2631N",
@@ -3492,11 +3472,11 @@
         "etd_guessed": false
        },
        {
-        "text": "SINOTRANS OSAKA 2641E·博多/门司 PSU",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
-        "cancelled": false,
+        "text": "SINOTRANS OSAKA 取消·博多/门司 PSU",
+        "bg": "#CFCFCF",
+        "fg": "#A6A6A6",
+        "ab": "#D2D2D2",
+        "cancelled": true,
         "route": "PSU",
         "ship": "SINOTRANS OSAKA",
         "voyage": "2641E",
@@ -3508,14 +3488,14 @@
         "etd_guessed": false
        },
        {
-        "text": "HF WEALTH 2630E·名古屋/常陆那柯/仙台 SKT6",
+        "text": "UNION TIANJIN 2645E·名古屋/常陆那柯/仙台 SKT6",
         "bg": "#E8E0D0",
         "fg": "#5A4A30",
         "ab": "#DACFC0",
         "cancelled": false,
         "route": "SKT6",
-        "ship": "HF WEALTH",
-        "voyage": "2630E",
+        "ship": "UNION TIANJIN",
+        "voyage": "2645E",
         "ports": [
          "名古屋",
          "常陆那柯",
@@ -3529,10 +3509,10 @@
     ]
    ],
    "stats": {
-    "stop_n": 37,
-    "def_n": 33,
-    "active_rows": 178,
-    "cancel_n": 36,
+    "stop_n": 39,
+    "def_n": 39,
+    "active_rows": 172,
+    "cancel_n": 41,
     "months": [
      "2026-07",
      "2026-08",
@@ -3571,14 +3551,14 @@
         "etd_guessed": false
        },
        {
-        "text": "SITC NINGBO 2649E·大阪/神户/德山 S7",
+        "text": "SITC RENHE 2625N·大阪/神户/德山 S7",
         "bg": "#E8E0D0",
         "fg": "#5A4A30",
         "ab": "#DACFC0",
         "cancelled": false,
         "route": "S7",
-        "ship": "SITC NINGBO",
-        "voyage": "2649E",
+        "ship": "SITC RENHE",
+        "voyage": "2625N",
         "ports": [
          "大阪",
          "神户",
@@ -3619,11 +3599,11 @@
       "in_month": false,
       "ships": [
        {
-        "text": "SITC RENHE 2625N·博多/门司 CJV7",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
-        "cancelled": false,
+        "text": "SITC RENHE 取消·博多/门司 CJV7",
+        "bg": "#CFCFCF",
+        "fg": "#A6A6A6",
+        "ab": "#D2D2D2",
+        "cancelled": true,
         "route": "CJV7",
         "ship": "SITC RENHE",
         "voyage": "2625N",
@@ -3814,11 +3794,11 @@
         "etd_guessed": false
        },
        {
-        "text": "SITC QINZHOU 2639E·博多/门司 PSU",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
-        "cancelled": false,
+        "text": "SITC QINZHOU 取消·博多/门司 PSU",
+        "bg": "#CFCFCF",
+        "fg": "#A6A6A6",
+        "ab": "#D2D2D2",
+        "cancelled": true,
         "route": "PSU",
         "ship": "SITC QINZHOU",
         "voyage": "2639E",
@@ -3923,11 +3903,11 @@
       "in_month": true,
       "ships": [
        {
-        "text": "YOUCAN 2629N·博多/门司 CJV7",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
-        "cancelled": false,
+        "text": "YOUCAN 取消·博多/门司 CJV7",
+        "bg": "#CFCFCF",
+        "fg": "#A6A6A6",
+        "ab": "#D2D2D2",
+        "cancelled": true,
         "route": "CJV7",
         "ship": "YOUCAN",
         "voyage": "2629N",
@@ -3985,26 +3965,7 @@
       "month": 10,
       "year": 2026,
       "in_month": true,
-      "ships": [
-       {
-        "text": "SITC HONGKONG 2629N·大阪/神户/名古屋/四日市 CJV2",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
-        "cancelled": false,
-        "route": "CJV2",
-        "ship": "SITC HONGKONG",
-        "voyage": "2629N",
-        "ports": [
-         "大阪",
-         "神户",
-         "名古屋",
-         "四日市"
-        ],
-        "etd": "10/8",
-        "etd_guessed": false
-       }
-      ]
+      "ships": []
      },
      {
       "day": 9,
@@ -4053,11 +4014,11 @@
       "in_month": true,
       "ships": [
        {
-        "text": "HF FORTUNE 2631N·东京/川崎/横滨/清水 CJV3",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
-        "cancelled": false,
+        "text": "HF FORTUNE 取消·东京/川崎/横滨/清水 CJV3",
+        "bg": "#CFCFCF",
+        "fg": "#A6A6A6",
+        "ab": "#D2D2D2",
+        "cancelled": true,
         "route": "CJV3",
         "ship": "HF FORTUNE",
         "voyage": "2631N",
@@ -4087,11 +4048,11 @@
         "etd_guessed": false
        },
        {
-        "text": "SINOTRANS OSAKA 2641E·博多/门司 PSU",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
-        "cancelled": false,
+        "text": "SINOTRANS OSAKA 取消·博多/门司 PSU",
+        "bg": "#CFCFCF",
+        "fg": "#A6A6A6",
+        "ab": "#D2D2D2",
+        "cancelled": true,
         "route": "PSU",
         "ship": "SINOTRANS OSAKA",
         "voyage": "2641E",
@@ -4103,14 +4064,14 @@
         "etd_guessed": false
        },
        {
-        "text": "HF WEALTH 2630E·名古屋/常陆那柯/仙台 SKT6",
+        "text": "UNION TIANJIN 2645E·名古屋/常陆那柯/仙台 SKT6",
         "bg": "#E8E0D0",
         "fg": "#5A4A30",
         "ab": "#DACFC0",
         "cancelled": false,
         "route": "SKT6",
-        "ship": "HF WEALTH",
-        "voyage": "2630E",
+        "ship": "UNION TIANJIN",
+        "voyage": "2645E",
         "ports": [
          "名古屋",
          "常陆那柯",
@@ -4162,14 +4123,14 @@
       "in_month": true,
       "ships": [
        {
-        "text": "UNION TIANJIN 2645N·博多/门司 CJV7",
+        "text": "SITC HONGKONG 2629N·博多/门司 CJV7",
         "bg": "#E8E0D0",
         "fg": "#5A4A30",
         "ab": "#DACFC0",
         "cancelled": false,
         "route": "CJV7",
-        "ship": "UNION TIANJIN",
-        "voyage": "2645N",
+        "ship": "SITC HONGKONG",
+        "voyage": "2629N",
         "ports": [
          "博多",
          "门司"
@@ -4365,8 +4326,8 @@
    "stats": {
     "stop_n": 0,
     "def_n": 0,
-    "active_rows": 178,
-    "cancel_n": 36,
+    "active_rows": 172,
+    "cancel_n": 41,
     "months": [
      "2026-07",
      "2026-08",
@@ -4689,8 +4650,8 @@
    "stats": {
     "stop_n": 0,
     "def_n": 0,
-    "active_rows": 178,
-    "cancel_n": 36,
+    "active_rows": 172,
+    "cancel_n": 41,
     "months": [
      "2026-07",
      "2026-08",
