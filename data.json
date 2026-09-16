@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-16 18:00",
- "generated_iso": "2026-09-16T18:00:52",
+ "generated": "2026-09-16 18:19",
+ "generated_iso": "2026-09-16T18:19:43",
  "months": {
   "2026-08": {
    "year": 2026,
@@ -2915,9 +2915,9 @@
        },
        {
         "text": "SINOTRANS OSAKA 2639E·博多/门司 PSU",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "PSU",
         "ship": "SINOTRANS OSAKA",
@@ -3509,7 +3509,7 @@
     ]
    ],
    "stats": {
-    "stop_n": 39,
+    "stop_n": 40,
     "def_n": 39,
     "active_rows": 172,
     "cancel_n": 41,
