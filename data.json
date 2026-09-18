@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-18 09:24",
- "generated_iso": "2026-09-18T09:24:40",
+ "generated": "2026-09-18 17:43",
+ "generated_iso": "2026-09-18T17:43:08",
  "months": {
   "2026-08": {
    "year": 2026,
@@ -1811,8 +1811,8 @@
    "stats": {
     "stop_n": 42,
     "def_n": 40,
-    "active_rows": 172,
-    "cancel_n": 41,
+    "active_rows": 169,
+    "cancel_n": 42,
     "months": [
      "2026-07",
      "2026-08",
@@ -2688,7 +2688,7 @@
         "etd_guessed": false
        },
        {
-        "text": "SITC NINGBO 2647E·大阪/神户 S7",
+        "text": "SITC NINGBO 2647E·大阪/神户/德山 S7",
         "bg": "#E8C0C0",
         "fg": "#9A4040",
         "ab": "#D8A8A8",
@@ -2698,7 +2698,8 @@
         "voyage": "2647E",
         "ports": [
          "大阪",
-         "神户"
+         "神户",
+         "德山"
         ],
         "etd": "9/20",
         "etd_guessed": false
@@ -2825,11 +2826,11 @@
       "in_month": true,
       "ships": [
        {
-        "text": "SIRI BHUM 2639E·名古屋 SKT5",
-        "bg": "#E8C0C0",
-        "fg": "#9A4040",
-        "ab": "#D8A8A8",
-        "cancelled": false,
+        "text": "SIRI BHUM 取消·名古屋 SKT5",
+        "bg": "#CFCFCF",
+        "fg": "#A6A6A6",
+        "ab": "#D2D2D2",
+        "cancelled": true,
         "route": "SKT5",
         "ship": "SIRI BHUM",
         "voyage": "2639E",
@@ -2957,36 +2958,35 @@
       "in_month": true,
       "ships": [
        {
-        "text": "SITC BUSAN 取消·横滨/东京/清水/名古屋 PST2",
-        "bg": "#CFCFCF",
-        "fg": "#A6A6A6",
-        "ab": "#D2D2D2",
-        "cancelled": true,
-        "route": "PST2",
-        "ship": "SITC BUSAN",
-        "voyage": "2645E",
-        "ports": [
-         "横滨",
-         "东京",
-         "清水",
-         "名古屋"
-        ],
-        "etd": "9/27",
-        "etd_guessed": false
-       },
-       {
-        "text": "SITC RENHE 2625N·大阪/神户/德山 S7",
+        "text": "SITC RENHE 2625N·大阪/神户/德山 CJV2",
         "bg": "#E8E0D0",
         "fg": "#5A4A30",
         "ab": "#DACFC0",
         "cancelled": false,
-        "route": "S7",
+        "route": "CJV2",
         "ship": "SITC RENHE",
         "voyage": "2625N",
         "ports": [
          "大阪",
          "神户",
          "德山"
+        ],
+        "etd": "9/27",
+        "etd_guessed": false
+       },
+       {
+        "text": "SITC TONGHE 2623E·横滨/东京/清水 PST2",
+        "bg": "#E8E0D0",
+        "fg": "#5A4A30",
+        "ab": "#DACFC0",
+        "cancelled": false,
+        "route": "PST2",
+        "ship": "SITC TONGHE",
+        "voyage": "2623E",
+        "ports": [
+         "横滨",
+         "东京",
+         "清水"
         ],
         "etd": "9/27",
         "etd_guessed": false
@@ -3202,33 +3202,16 @@
         "etd_guessed": false
        },
        {
-        "text": "SITC MACAO 2621N·大阪/神户 CVS2",
+        "text": "SITC QINZHOU 2639E·博多 PSU",
         "bg": "#E8E0D0",
         "fg": "#5A4A30",
         "ab": "#DACFC0",
         "cancelled": false,
-        "route": "CVS2",
-        "ship": "SITC MACAO",
-        "voyage": "2621N",
-        "ports": [
-         "大阪",
-         "神户"
-        ],
-        "etd": "10/3",
-        "etd_guessed": false
-       },
-       {
-        "text": "SITC QINZHOU 取消·博多/门司 PSU",
-        "bg": "#CFCFCF",
-        "fg": "#A6A6A6",
-        "ab": "#D2D2D2",
-        "cancelled": true,
         "route": "PSU",
         "ship": "SITC QINZHOU",
         "voyage": "2639E",
         "ports": [
-         "博多",
-         "门司"
+         "博多"
         ],
         "etd": "10/3",
         "etd_guessed": false
@@ -3294,22 +3277,6 @@
         ],
         "etd": "10/4",
         "etd_guessed": false
-       },
-       {
-        "text": "CONSCIENCE 2638N·东京/横滨 STK7",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
-        "cancelled": false,
-        "route": "STK7",
-        "ship": "CONSCIENCE",
-        "voyage": "2638N",
-        "ports": [
-         "东京",
-         "横滨"
-        ],
-        "etd": "10/4",
-        "etd_guessed": false
        }
       ]
      },
@@ -3343,11 +3310,11 @@
         "etd_guessed": false
        },
        {
-        "text": "HARRIER 2638N·大阪/神户 S2",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
-        "cancelled": false,
+        "text": "HARRIER 取消·大阪/神户 S2",
+        "bg": "#CFCFCF",
+        "fg": "#A6A6A6",
+        "ab": "#D2D2D2",
+        "cancelled": true,
         "route": "S2",
         "ship": "HARRIER",
         "voyage": "2638N",
@@ -3398,11 +3365,11 @@
       "in_month": false,
       "ships": [
        {
-        "text": "GLORY GUANDONG 2641E·横滨/东京 T5",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
-        "cancelled": false,
+        "text": "GLORY GUANDONG 取消·横滨/东京 T5",
+        "bg": "#CFCFCF",
+        "fg": "#A6A6A6",
+        "ab": "#D2D2D2",
+        "cancelled": true,
         "route": "T5",
         "ship": "GLORY GUANDONG",
         "voyage": "2641E",
@@ -3456,14 +3423,14 @@
         "etd_guessed": false
        },
        {
-        "text": "KOTA NAZAR 2639N·大阪/神户 CVS2",
+        "text": "SITC MACAO 2621N·大阪/神户 CVS2",
         "bg": "#E8E0D0",
         "fg": "#5A4A30",
         "ab": "#DACFC0",
         "cancelled": false,
         "route": "CVS2",
-        "ship": "KOTA NAZAR",
-        "voyage": "2639N",
+        "ship": "SITC MACAO",
+        "voyage": "2621N",
         "ports": [
          "大阪",
          "神户"
@@ -3511,8 +3478,8 @@
    "stats": {
     "stop_n": 41,
     "def_n": 39,
-    "active_rows": 172,
-    "cancel_n": 41,
+    "active_rows": 169,
+    "cancel_n": 42,
     "months": [
      "2026-07",
      "2026-08",
@@ -3533,36 +3500,35 @@
       "in_month": false,
       "ships": [
        {
-        "text": "SITC BUSAN 取消·横滨/东京/清水/名古屋 PST2",
-        "bg": "#CFCFCF",
-        "fg": "#A6A6A6",
-        "ab": "#D2D2D2",
-        "cancelled": true,
-        "route": "PST2",
-        "ship": "SITC BUSAN",
-        "voyage": "2645E",
-        "ports": [
-         "横滨",
-         "东京",
-         "清水",
-         "名古屋"
-        ],
-        "etd": "9/27",
-        "etd_guessed": false
-       },
-       {
-        "text": "SITC RENHE 2625N·大阪/神户/德山 S7",
+        "text": "SITC RENHE 2625N·大阪/神户/德山 CJV2",
         "bg": "#E8E0D0",
         "fg": "#5A4A30",
         "ab": "#DACFC0",
         "cancelled": false,
-        "route": "S7",
+        "route": "CJV2",
         "ship": "SITC RENHE",
         "voyage": "2625N",
         "ports": [
          "大阪",
          "神户",
          "德山"
+        ],
+        "etd": "9/27",
+        "etd_guessed": false
+       },
+       {
+        "text": "SITC TONGHE 2623E·横滨/东京/清水 PST2",
+        "bg": "#E8E0D0",
+        "fg": "#5A4A30",
+        "ab": "#DACFC0",
+        "cancelled": false,
+        "route": "PST2",
+        "ship": "SITC TONGHE",
+        "voyage": "2623E",
+        "ports": [
+         "横滨",
+         "东京",
+         "清水"
         ],
         "etd": "9/27",
         "etd_guessed": false
@@ -3778,33 +3744,16 @@
         "etd_guessed": false
        },
        {
-        "text": "SITC MACAO 2621N·大阪/神户 CVS2",
+        "text": "SITC QINZHOU 2639E·博多 PSU",
         "bg": "#E8E0D0",
         "fg": "#5A4A30",
         "ab": "#DACFC0",
         "cancelled": false,
-        "route": "CVS2",
-        "ship": "SITC MACAO",
-        "voyage": "2621N",
-        "ports": [
-         "大阪",
-         "神户"
-        ],
-        "etd": "10/3",
-        "etd_guessed": false
-       },
-       {
-        "text": "SITC QINZHOU 取消·博多/门司 PSU",
-        "bg": "#CFCFCF",
-        "fg": "#A6A6A6",
-        "ab": "#D2D2D2",
-        "cancelled": true,
         "route": "PSU",
         "ship": "SITC QINZHOU",
         "voyage": "2639E",
         "ports": [
-         "博多",
-         "门司"
+         "博多"
         ],
         "etd": "10/3",
         "etd_guessed": false
@@ -3870,22 +3819,6 @@
         ],
         "etd": "10/4",
         "etd_guessed": false
-       },
-       {
-        "text": "CONSCIENCE 2638N·东京/横滨 STK7",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
-        "cancelled": false,
-        "route": "STK7",
-        "ship": "CONSCIENCE",
-        "voyage": "2638N",
-        "ports": [
-         "东京",
-         "横滨"
-        ],
-        "etd": "10/4",
-        "etd_guessed": false
        }
       ]
      },
@@ -3919,11 +3852,11 @@
         "etd_guessed": false
        },
        {
-        "text": "HARRIER 2638N·大阪/神户 S2",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
-        "cancelled": false,
+        "text": "HARRIER 取消·大阪/神户 S2",
+        "bg": "#CFCFCF",
+        "fg": "#A6A6A6",
+        "ab": "#D2D2D2",
+        "cancelled": true,
         "route": "S2",
         "ship": "HARRIER",
         "voyage": "2638N",
@@ -3974,11 +3907,11 @@
       "in_month": true,
       "ships": [
        {
-        "text": "GLORY GUANDONG 2641E·横滨/东京 T5",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
-        "cancelled": false,
+        "text": "GLORY GUANDONG 取消·横滨/东京 T5",
+        "bg": "#CFCFCF",
+        "fg": "#A6A6A6",
+        "ab": "#D2D2D2",
+        "cancelled": true,
         "route": "T5",
         "ship": "GLORY GUANDONG",
         "voyage": "2641E",
@@ -4032,14 +3965,14 @@
         "etd_guessed": false
        },
        {
-        "text": "KOTA NAZAR 2639N·大阪/神户 CVS2",
+        "text": "SITC MACAO 2621N·大阪/神户 CVS2",
         "bg": "#E8E0D0",
         "fg": "#5A4A30",
         "ab": "#DACFC0",
         "cancelled": false,
         "route": "CVS2",
-        "ship": "KOTA NAZAR",
-        "voyage": "2639N",
+        "ship": "SITC MACAO",
+        "voyage": "2621N",
         "ports": [
          "大阪",
          "神户"
@@ -4326,8 +4259,8 @@
    "stats": {
     "stop_n": 0,
     "def_n": 0,
-    "active_rows": 172,
-    "cancel_n": 41,
+    "active_rows": 169,
+    "cancel_n": 42,
     "months": [
      "2026-07",
      "2026-08",
@@ -4650,8 +4583,8 @@
    "stats": {
     "stop_n": 0,
     "def_n": 0,
-    "active_rows": 172,
-    "cancel_n": 41,
+    "active_rows": 169,
+    "cancel_n": 42,
     "months": [
      "2026-07",
      "2026-08",
