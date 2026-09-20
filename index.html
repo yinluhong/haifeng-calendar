@@ -65,7 +65,7 @@
   .card h3 { margin: 0 0 10px; font-size: 16px; }
   .card .row { display: flex; gap: 8px; padding: 4px 0; border-bottom: 1px dashed #E4DDCF; font-size: 13px; }
   .card .row .k { width: 70px; color: #8A7A60; }
-  .card .close { margin-top: 14px; text-align: right; }
+  .card .close { margin-top: 14px; display: flex; justify-content: flex-end; gap: 8px; }
   .badge { display: inline-block; padding: 1px 8px; border-radius: 10px; font-size: 12px; }
   .badge.cancel { background: #E2E2E2; color: #9A9A9A; }
   .badge.guess { background: #FBE9C8; color: #9A6A1A; }
@@ -102,7 +102,7 @@
   <div class="card">
     <h3 id="d_title">船期详情</h3>
     <div id="d_body"></div>
-    <div class="close"><button class="navbtn" onclick="closeDetail()">关闭</button></div>
+    <div class="close"><button class="navbtn" id="copyBtn" onclick="copyDetail()">📋 复制</button><button class="navbtn" onclick="closeDetail()">关闭</button></div>
   </div>
 </div>
 
@@ -202,7 +202,9 @@ function render(data) {
   }
 }
 
+let currentSh = null;
 function showDetail(sh, cell) {
+  currentSh = sh;
   $("d_title").textContent = sh.cancelled ? "船期（已取消/SKIP）" : "船期详情";
   let html = "";
   html += row("航线", sh.route || "—");
@@ -218,6 +220,35 @@ function showDetail(sh, cell) {
 function row(k, v) { return `<div class="row"><span class="k">${k}</span><span>${v}</span></div>`; }
 function closeDetail() { $("detail").classList.remove("show"); }
 $("detail").addEventListener("click", e => { if (e.target.id === "detail") closeDetail(); });
+
+async function copyDetail() {
+  if (!currentSh) return;
+  const sh = currentSh;
+  const text = [sh.route, sh.etd, sh.ship, sh.voyage]
+    .map(x => (x || "").toString().trim())
+    .filter(x => x.length)
+    .join(" ");
+  if (!text) return;
+  try {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      await navigator.clipboard.writeText(text);
+    } else {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      ta.style.position = "fixed"; ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.focus(); ta.select();
+      document.execCommand("copy");
+      document.body.removeChild(ta);
+    }
+    const btn = $("copyBtn");
+    const old = btn.textContent;
+    btn.textContent = "✓ 已复制";
+    setTimeout(() => { btn.textContent = old; }, 1500);
+  } catch (e) {
+    alert("复制失败，请手动选择：" + e.message);
+  }
+}
 
 $("prev").onclick = () => { curM--; if (curM < 1) { curM = 12; curY--; } load(); };
 $("next").onclick = () => { curM++; if (curM > 12) { curM = 1; curY++; } load(); };
