@@ -1,6 +1,6 @@
 {
- "generated": "2026-09-20 22:14",
- "generated_iso": "2026-09-20T22:14:48",
+ "generated": "2026-09-21 10:44",
+ "generated_iso": "2026-09-21T10:44:09",
  "months": {
   "2026-08": {
    "year": 2026,
@@ -2916,9 +2916,9 @@
        },
        {
         "text": "SINOTRANS OSAKA 2639E·博多/门司 PSU",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "PSU",
         "ship": "SINOTRANS OSAKA",
@@ -2976,9 +2976,9 @@
        },
        {
         "text": "SITC TONGHE 2623E·横滨/东京/清水 PST2",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "PST2",
         "ship": "SITC TONGHE",
@@ -3477,7 +3477,7 @@
     ]
    ],
    "stats": {
-    "stop_n": 41,
+    "stop_n": 43,
     "def_n": 39,
     "active_rows": 168,
     "cancel_n": 43,
@@ -3519,9 +3519,9 @@
        },
        {
         "text": "SITC TONGHE 2623E·横滨/东京/清水 PST2",
-        "bg": "#E8E0D0",
-        "fg": "#5A4A30",
-        "ab": "#DACFC0",
+        "bg": "#E8C0C0",
+        "fg": "#9A4040",
+        "ab": "#D8A8A8",
         "cancelled": false,
         "route": "PST2",
         "ship": "SITC TONGHE",
